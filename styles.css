@@ -3,6 +3,15 @@
     place-items: center;
 }
 
+.table th{
+    width: 300px;
+    text-align: center;
+}
+
+.table td{
+    text-align: center;
+}
+
 .expandChildTable:before {
     content: "+";
     display: block;
