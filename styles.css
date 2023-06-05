@@ -1,0 +1,19 @@
+.main{
+    display: grid;
+    place-items: center;
+}
+
+.expandChildTable:before {
+    content: "+";
+    display: block;
+    cursor: pointer;
+}
+.expandChildTable.selected:before {
+    content: "-";
+}
+.childTableRow {
+    display: none;
+}
+.childTableRow table {
+    border: 1px solid #555;
+}

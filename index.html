@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section class="main">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Razão Social</th>
+                    <th>Nome Fantasia</th>
+                    <th>Servidor</th>
+                    <th>Plantão</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><span class="expandChildTable"></span></td>
+                <td>A dos Santos Alimentos ME</td>
+                <td>Maná Distribuidora</td>
+                <td>Windows</td>
+                <td>Não</td>
+            </tr>
+            <tr class="childTableRow">
+                <td colspan="8">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Endereço</th>
+                                <th>Responsável</th>
+                                <th>Cidade</th>
+                                <th>UF</th>
+                                <th>Telefone</th>
+                                <th>Sped</th>
+                                <th>Email</th>
+                                <th>Ip Acesso Remoto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Av. do Barão 583, Boqueirão</td>
+                                <td>Angelino</td>
+                                <td>Passo Fundo</td>
+                                <td>RS</td>
+                                <td>(54) 98150-5538</td>
+                                <td>Não</td>
+                                <td>manadistribuidora@outlook.com</td>
+                                <td>Nenhum</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><span class="expandChildTable"></span></td>
+                <td>A dos Santos Alimentos ME</td>
+                <td>Maná Distribuidora</td>
+                <td>Windows</td>
+                <td>Não</td>
+            </tr>
+            <tr class="childTableRow">
+                <td colspan="8">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Endereço</th>
+                                <th>Responsável</th>
+                                <th>Cidade</th>
+                                <th>UF</th>
+                                <th>Telefone</th>
+                                <th>Sped</th>
+                                <th>Email</th>
+                                <th>Ip Acesso Remoto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Av. do Barão 583, Boqueirão</td>
+                                <td>Angelino</td>
+                                <td>Passo Fundo</td>
+                                <td>RS</td>
+                                <td>(54) 98150-5538</td>
+                                <td>Não</td>
+                                <td>manadistribuidora@outlook.com</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function () {
+            $('.expandChildTable').on('click', function () {
+                $(this).toggleClass('selected').closest('tr').next().toggle();
+            })
+        });
+    </script>
+</body>
+
+</html>
